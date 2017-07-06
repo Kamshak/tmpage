@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.9292mm" height="15.875mm" viewBox="0 0 102 64" version="1.2" baseProfile="tiny" preserveAspectRatio="xMinYMin slice">
+  <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel">
+      <g fill="#ed4848" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
+          <path vector-effect="none" fill-rule="evenodd" d="M53,0 C57.4183,0 61,3.58172 61,8 C61,12.4183 57.4183,16 53,16 C48.5817,16 45,12.4183 45,8 C45,3.58172 48.5817,0 53,0 "/>
+      </g>
+      <g fill="#026a8c" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
+          <path vector-effect="none" fill-rule="evenodd" d="M19,22 C23.4183,22 27,25.5817 27,30 C27,34.4183 23.4183,38 19,38 C14.5817,38 11,34.4183 11,30 C11,25.5817 14.5817,22 19,22 "/>
+      </g>
+      <g fill="#026a8c" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
+          <path vector-effect="none" fill-rule="evenodd" d="M42,22 C46.4183,22 50,25.5817 50,30 C50,34.4183 46.4183,38 42,38 C37.5817,38 34,34.4183 34,30 C34,25.5817 37.5817,22 42,22 "/>
+      </g>
+      <g fill="#026a8c" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
+          <path vector-effect="none" fill-rule="evenodd" d="M64,22 C68.4183,22 72,25.5817 72,30 C72,34.4183 68.4183,38 64,38 C59.5817,38 56,34.4183 56,30 C56,25.5817 59.5817,22 64,22 "/>
+      </g>
+      <g fill="#026a8c" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
+          <path vector-effect="none" fill-rule="evenodd" d="M86,22 C90.4183,22 94,25.5817 94,30 C94,34.4183 90.4183,38 86,38 C81.5817,38 78,34.4183 78,30 C78,25.5817 81.5817,22 86,22 "/>
+      </g>
+      <g fill="#026a8c" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
+          <path vector-effect="none" fill-rule="evenodd" d="M19,44 C23.4183,44 27,47.5817 27,52 C27,56.4183 23.4183,60 19,60 C14.5817,60 11,56.4183 11,52 C11,47.5817 14.5817,44 19,44 "/>
+      </g>
+      <g fill="#026a8c" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
+          <path vector-effect="none" fill-rule="evenodd" d="M42,44 C46.4183,44 50,47.5817 50,52 C50,56.4183 46.4183,60 42,60 C37.5817,60 34,56.4183 34,52 C34,47.5817 37.5817,44 42,44 "/>
+      </g>
+      <g fill="#026a8c" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
+          <path vector-effect="none" fill-rule="evenodd" d="M64,44 C68.4183,44 72,47.5817 72,52 C72,56.4183 68.4183,60 64,60 C59.5817,60 56,56.4183 56,52 C56,47.5817 59.5817,44 64,44 "/>
+      </g>
+      <g fill="#026a8c" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
+          <path vector-effect="none" fill-rule="evenodd" d="M86,44 C90.4183,44 94,47.5817 94,52 C94,56.4183 90.4183,60 86,60 C81.5817,60 78,56.4183 78,52 C78,47.5817 81.5817,44 86,44 "/>
+      </g>
+  </g>
+</svg>

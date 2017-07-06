@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Travel Mates - The best way to travel</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <base href="/">
+  <link rel="preload" as="style" href="main.css" onload="this.rel='stylesheet'" />
+  <link rel="preload" as="style" href="styles.css" onload="this.rel='stylesheet'" />
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" onload="this.rel='stylesheet'" />
+  <link rel="preload" as="image" href="/assets/camels.png" />
+  <link rel="preload" as="image" href="/assets/travelmaster.jpg" />
+  <link rel="preload" as="image" href="/assets/travelmates.jpg" />
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="preload" as="style" onload="this.rel='stylesheet'" />
+  <script type="text/javascript">
+    /*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
+    (function (w) {
+      "use strict";
+      /* exported loadCSS */
+      var loadCSS = function (href, before, media) {
+        // Arguments explained:
+        // `href` [REQUIRED] is the URL for your CSS file.
+        // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+        // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+        // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+        var doc = w.document;
+        var ss = doc.createElement("link");
+        var ref;
+        if (before) {
+          ref = before;
+        }
+        else {
+          var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+          ref = refs[refs.length - 1];
+        }
+
+        var sheets = doc.styleSheets;
+        ss.rel = "stylesheet";
+        ss.href = href;
+        // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+        ss.media = "only x";
+
+        // wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+        function ready(cb) {
+          if (doc.body) {
+            return cb();
+          }
+          setTimeout(function () {
+            ready(cb);
+          });
+        }
+        // Inject link
+        // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+        // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+        ready(function () {
+          ref.parentNode.insertBefore(ss, (before ? ref : ref.nextSibling));
+        });
+        // A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+        var onloadcssdefined = function (cb) {
+          var resolvedHref = ss.href;
+          var i = sheets.length;
+          while (i--) {
+            if (sheets[i].href === resolvedHref) {
+              return cb();
+            }
+          }
+          setTimeout(function () {
+            onloadcssdefined(cb);
+          });
+        };
+
+        function loadCB() {
+          if (ss.addEventListener) {
+            ss.removeEventListener("load", loadCB);
+          }
+          ss.media = media || "all";
+        }
+
+        // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+        if (ss.addEventListener) {
+          ss.addEventListener("load", loadCB);
+        }
+        ss.onloadcssdefined = onloadcssdefined;
+        onloadcssdefined(loadCB);
+        return ss;
+      };
+      // commonjs
+      if (typeof exports !== "undefined") {
+        exports.loadCSS = loadCSS;
+      }
+      else {
+        w.loadCSS = loadCSS;
+      }
+    } (typeof global !== "undefined" ? global : this));
+
+    /*! CSS rel=preload polyfill. Depends on loadCSS function. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT  */
+    (function( w ){
+      // rel=preload support test
+      if( !w.loadCSS ){
+        return;
+      }
+      var rp = loadCSS.relpreload = {};
+      rp.support = function(){
+        try {
+          return w.document.createElement( "link" ).relList.supports( "preload" );
+        } catch (e) {
+          return false;
+        }
+      };
+
+      // loop preload links and fetch using loadCSS
+      rp.poly = function(){
+        var links = w.document.getElementsByTagName( "link" );
+        for( var i = 0; i < links.length; i++ ){
+          var link = links[ i ];
+          if( link.rel === "preload" && link.getAttribute( "as" ) === "style" ){
+            w.loadCSS( link.href, link );
+            link.rel = null;
+          }
+        }
+      };
+
+      // if link[rel=preload] is not supported, we must fetch the CSS manually using loadCSS
+      if( !rp.support() ){
+        console.log("Not Supported");
+        rp.poly();
+        var run = w.setInterval( rp.poly, 300 );
+        if( w.addEventListener ){
+          w.addEventListener( "load", function(){
+            rp.poly();
+            w.clearInterval( run );
+          } );
+        }
+        if( w.attachEvent ){
+          w.attachEvent( "onload", function(){
+            w.clearInterval( run );
+          } )
+        }
+      }
+    }( this ));
+  </script>
+<style>#str-dlls { display: none }</style>
+
+<style>
+    html {
+      font-family: sans-serif;
+      line-height: 1.15;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    ::-webkit-input-placeholder {
+      color: inherit;
+      opacity: .54;
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+
+    html {
+      font-family: sans-serif;
+      line-height: 1.15;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    ::-webkit-input-placeholder {
+      color: inherit;
+      opacity: 0.54;
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    @-ms-viewport {
+      width: device-width;
+    }
+
+    html {
+      font-size: 16px;
+      -ms-overflow-style: scrollbar;
+    }
+
+    body {
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #373a3c;
+      background-color: #fff;
+    }
+
+    .text-primary {
+      color: #ED4848 !important;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      min-height: 100%;
+      height: 100%;
+    }
+
+    body.loading {
+      font-size: 1.5rem;
+      text-color: #2B2B2B;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body.loading #loading {
+      display: flex;
+      flex-direction: column;
+    }
+
+    body.loading .spinner {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    body.loading .spinner>div {
+      width: 18px;
+      height: 18px;
+      background-color: #ED4848;
+      z-index: 100;
+      border-radius: 100%;
+      display: inline-block;
+      -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+      animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    }
+
+    body.loading .spinner .bounce1 {
+      -webkit-animation-delay: -0.32s;
+      animation-delay: -0.32s;
+      margin-right: 5px;
+    }
+
+    body.loading .spinner .bounce2 {
+      -webkit-animation-delay: -0.16s;
+      animation-delay: -0.16s;
+      margin-right: 5px;
+    }
+
+    @-webkit-keyframes sk-bouncedelay {
+      0%, 80%, 100% {
+        -webkit-transform: scale(0);
+      }
+
+      40% {
+        -webkit-transform: scale(1);
+      }
+    }
+
+    @keyframes sk-bouncedelay {
+      0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+
+      40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+  </style>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-87614128-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script></script>
+</head>
+
+<body class="loading">
+  <my-app>
+    <div id="loading">
+      <span>Loading <span class="text-primary">TravelMates</span></span>
+      <div class="spinner" [hidden]="!loading">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+  </my-app>
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=console.*,Intl.~locale.en&gated=1" async></script>
+  
+<script type="text/javascript" src="main.bc01d32200d313f977a2.bundle.js" async="true"></script></body>
+<!-- loadCss -->
+
+</html>
